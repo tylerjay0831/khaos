@@ -94,6 +94,87 @@
         .social-media .social-icons a {
             font-size: 2em;
         }
+
+        .band-members {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+            background-color: #1f1f1f;
+            padding: 40px 20px;
+        }
+
+        .band-member {
+            width: 200px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .band-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .band-member h3 {
+            color: #ff69b4;
+            margin: 10px 0;
+        }
+
+        .band-member p {
+            color: #fff;
+        }
+
+        #reviews {
+            padding: 40px 20px;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #reviews h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff69b4;
+        }
+
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .review {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            position: relative;
+        }
+
+        .review p {
+            margin: 0 0 10px;
+        }
+
+        .review blockquote {
+            font-size: 1.1em;
+            font-style: italic;
+            color: #cccccc;
+            margin: 10px 0;
+        }
+
+        .review p:last-child {
+            font-size: 0.9em;
+            color: #bbbbbb;
+            text-align: right;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -103,6 +184,8 @@
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <a href="#social">Social Media</a>
+            <a href="#members">Band Members</a>
+            <a href="#reviews">Testimonials</a>
         </nav>
     </header>
 
@@ -121,19 +204,75 @@
         </div>
     </section>
 
+    <!-- Band Members Section -->
+    <section id="members">
+        <h2>Meet the Band</h2>
+        <div class="band-members">
+            <div class="band-member">
+                <img src="member1.jpg" alt="Band Member 1">
+                <h3>Kolt Peterson</h3>
+                <p>Lead Guitarist/Drummer</p>
+            </div>
+            <div class="band-member">
+                <img src="member3.jpg" alt="Band Member 3">
+                <h3>Moxxie Austin</h3>
+                <p>Lead Vocal</p>
+            </div>
+            <div class="band-member">
+                <img src="member4.jpg" alt="Band Member 4">
+                <h3>Tyler Gall</h3>
+                <p>Electric Guitar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews">
+        <h2>What Our Fans Say</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <blockquote>"Khaos blew me away with their live performance! The energy and passion were unmatched. Can't wait to see them again!"</blockquote>
+                <p>- Alex R., Music Enthusiast</p>
+            </div>
+            <div class="review">
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <blockquote>"Their songs are a perfect blend of emotion and raw power. Every track hits me right in the soul!"</blockquote>
+                <p>- Jamie L., Longtime Fan</p>
+            </div>
+            <div class="review">
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <blockquote>"An electrifying experience from start to finish. Khaos is redefining modern rock."</blockquote>
+                <p>- Morgan K., Concertgoer</p>
+            </div>
+            <div class="review">
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <blockquote>"Amazing stage presence and mind-blowing performances! A must-see for any music lover."</blockquote>
+                <p>- Jordan W., Festival Attendee</p>
+            </div>
+            <div class="review">
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <blockquote>"Their live shows are pure adrenaline. Khaos is the future of rock and roll!"</blockquote>
+                <p>- Riley M., Rock Aficionado</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Social Media Section -->
     <section id="social" class="social-media">
         <h2>Follow Us on Social Media</h2>
         <div class="social-icons">
             <a href="https://www.tiktok.com/@khaos22453" target="_blank">
                 <i class="fa fa-tiktok"></i> TikTok
+            </a>
             <a href="https://www.youtube.com/channel/UC14cscHnQgZIGKh9rW1FWWA" target="_blank">
-                <i class="fa fa-Youtube"></i>  Youtube
-<a href="https://x.com/khaosband3" target="_blank">
-                <i class="fa fa-X"></i>  X
-<a href="https://www.instagram.com/khaosband3/" target="_blank">
+                <i class="fa fa-Youtube"></i> Youtube
+            </a>
+            <a href="https://x.com/khaosband3" target="_blank">
+                <i class="fa fa-X"></i> X
+            </a>
+            <a href="https://www.instagram.com/khaosband3/" target="_blank">
                 <i class="fa fa-instagram"></i> Instagram
-
             </a>
         </div>
     </section>
@@ -145,5 +284,3 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
